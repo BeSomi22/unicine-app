@@ -1,0 +1,151 @@
+.info-container{
+  width: 100%;
+  height: 80vh;
+}
+
+.backdrop-details {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.backdrop-image-details {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%) contrast(130%);
+  border-radius: 5px;
+}
+
+.overlay-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.poster-details {
+  flex: 0 0 200px; /* Set a fixed width for the poster */
+  margin-right: 20px;
+}
+
+.poster-image-details{
+    border-radius: 10px;
+}
+.exact-info {
+  flex: 1;
+  margin-top: 30px;
+  height: fit-content;
+}
+
+.overlay-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.movie-infos {
+  color: #ffffff;
+  max-width: fit-content;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.movie-infos p {
+  margin-bottom: 10px;
+}
+
+.movie-infos strong {
+  font-weight: bold;
+}
+.movie-cast {
+  margin-top: 40px;
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.cast-member {
+  width: 150px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.cast-image {
+  width: 70%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.cast-member p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+@media (max-width: 786px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .poster-details {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .exact-info {
+    margin-top: 0;
+  }
+  .poster-image-details {
+    width: 150px;
+    height: auto;
+  }
+  .overlay-details {
+    padding: 20px;
+  }
+  .movie-infos {
+    margin-top: 0;
+    max-width: fit-content;
+  }
+  .poster-details {
+    margin: 0;
+  }
+  h1 {
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+  .movie-infos p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+}
+@media (min-height: 850px){
+    .overlay-details{
+        bottom: 90px;
+    }
+}
